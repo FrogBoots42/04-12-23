@@ -121,6 +121,20 @@ console.log(check3and7(3));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const upperFirst = function (inputString) {
+  const words = inputString.split(" ");
+
+  const capitalizedWords = words.map(function (word) {
+    return word.charAt(0).toUpperCase() + word.slice(1);
+  });
+
+  const capitalizedString = capitalizedWords.join(" ");
+
+  return capitalizedString;
+};
+
+console.log(upperFirst("my name is manuel"));
+
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
  della stringa originale.
